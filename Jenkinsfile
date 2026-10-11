@@ -24,5 +24,11 @@ pipeline {
                }
             }
         }
+      stage('Run Container'){
+          steps{
+          bat 'docker run --rm sateesh1390/devops-automation:latest'
+
+          }
+      }
     }
 }
